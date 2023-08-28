@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: grey;
+    background-color: rgb(52, 71, 52);
 }
 
 .calculator {
@@ -12,8 +12,19 @@ body {
     border-radius: 10px;
 }
 
+
+.screen {
+   width: 224px;
+   background-color: rgb(80, 255, 185);
+   font-size: 40px;
+   text-align: end;
+   padding: 4px;
+}
+
 .buttons {
     width: 232px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -28,3 +39,28 @@ button {
     margin: 4px;
 }
 
+button:hover {
+    background-color: rgb(21, 20, 20);
+}
+
+button:active {
+    background-color: rgb(1, 59, 16);
+}
+
+#equals {
+   background-color: rgb(255, 0, 0); 
+}
+
+#equals:hover {
+    background-color: rgb(94, 6, 6);
+}
+
+#clear {
+    width: 100%;
+    background-color: rgb(197, 197, 26);
+    font-size: 30px;
+}
+
+#clear:hover {
+    background-color: rgb(61, 88, 7);
+}
