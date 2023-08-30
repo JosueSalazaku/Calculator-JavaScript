@@ -7,9 +7,9 @@
  function calculate(button) {
     const value = button.textContent
 
-    calculation.push(value)
+    calculation.push(value);
 
-    console.log(calculate)
+    console.log(calculation)
 
  }
 
