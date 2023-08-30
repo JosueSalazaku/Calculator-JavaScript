@@ -3,13 +3,23 @@
 
 
  let calculation = []
+ let accumulativeCalculation
 
  function calculate(button) {
     const value = button.textContent
-
+    if (value == 'CLEAR') {
+        calculation = []
+        screenDisplay.textContent = '.'
+    } else if (value === "=") {
+       screenDisplay.textContent = eval(accumulativeCalculation)
+    }
+   
+    
     calculation.push(value);
+    accumulativeCalculation  = calculation.join('')
+    screenDisplay.textContent = accumulativeCalculation
 
-    console.log(calculation)
+    
 
  }
 
