@@ -16,12 +16,8 @@
         calculation.push(value);
         accumulativeCalculation  = calculation.join('')
         screenDisplay.textContent = accumulativeCalculation
-
+        
     }
-   
-    
-    
-    
 
  }
 
